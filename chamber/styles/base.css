@@ -125,7 +125,7 @@ header img {
 }
 
 .hero-image {
-  background: url(/chamber/images/hero-image.webp);
+  background: url(chamber/images/hero-image.webp);
   background-size: auto 110vh;
   background-position: top;
 }

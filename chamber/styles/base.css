@@ -40,15 +40,28 @@ body {
     text-decoration: none;
     color: #333; 
   }
-  
-  .card {
+  .call-to-action {
     background-color: white;
     margin-bottom: 20px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
 
-  .card2 {
+  .current-events {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .weather-card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .company-spotlights {
     background-color: white;
     margin-bottom: 20px;
     padding: 15px;
@@ -79,6 +92,10 @@ body {
     color: #0000EE;
   }
 
+  .dark-mode-toggle {
+    margin-left: 20px;
+  }
+
   .dark-mode {
     background-color: #333;
     color: #f8f8f8;
@@ -98,3 +115,17 @@ body {
   .show-nav {
     display: block;
   }
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-right: 10px;
+}
+
+.hero-image {
+  background: url(/chamber/images/hero-image.webp);
+  background-size: auto 110vh;
+  background-position: top;
+}

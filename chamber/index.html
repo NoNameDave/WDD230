@@ -12,7 +12,7 @@
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Christiaan Wolmarans's Profile Picture">
+    <img src="images/profile.webp" alt="Christiaan Wolmarans's Profile Picture">
     <h1>Christiaan Wolmarans</h1>
     <button class="dark-mode-toggle">Dark Mode</button>
   </header>
@@ -25,9 +25,15 @@
     <li><a href="#">Form</a></li>
   </ul>
 </nav>
-  <main class="hero-image">
+  <main>
+    <div class="hero-container">
+      <img src="images/hero-image.webp" alt="Temple Image">
+      <div class="overlay-text">Idaho Falls</div>
+  </div>
   <section class="call-to-action">
+    <h3>
       <a href="week01/chamber-site-plan.html">Join the Chamber of Commerce</a>
+    </h3>
   </section>
     <section class="current-events">
       <h2>Current Events</h2>
@@ -41,12 +47,18 @@
       <h2>Company Spotlights</h2>
       <!-- Company advertisements here -->
   </section>
+  <section class="visit-count">
+      <h3 id="visitCount"></h3>
+</section>
   </main>
+  
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.495877555116!2d27.831249376194023!3d-26.11537006036352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e959f2b007b831b%3A0xdb6b45f1a48a5fc!2s4%20Stokroos%20St%2C%20Breaunanda%2C%20Krugersdorp%2C%201739!5e0!3m2!1sen!2sza!4v1700161234570!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   <footer>
     <p>&copy; <span id="year"></span> Christiaan Wolmarans, South Africa</p>
     <p id="lastModified"></p>
   </footer>
   <script src="scripts/getDates.js"></script>
   <script src="scripts/script.js"></script>
+  <script src="scripts/visitCounter.js"></script>
 </body>
 </html>

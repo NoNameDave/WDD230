@@ -67,6 +67,13 @@ body {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+
+  .visit-count {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
   
   footer {
     background-color: #eaeaea;
@@ -124,8 +131,54 @@ header img {
     margin-right: 10px;
 }
 
-.hero-image {
-  background: url(/chamber/images/hero-image.webp);
-  background-size: auto 110vh;
-  background-position: top;
+.picture-element {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.picture-element img {
+  width: 100%;
+  height: auto; 
+}
+
+.temple-label {
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #333; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+iframe {
+  padding-top: 10px;
+  width: 63%;
+  height: 450px;
+  display: block;
+  margin: auto;
+}
+
+.hero-container {
+  position: relative; /* Parent container must be relative */
+  width: 100%; /* Full width */
+}
+
+.hero-container img {
+  width: 100%; /* Image should cover the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay-text {
+  position: absolute; /* Absolute positioning for the overlay */
+  top: 50%; /* Position it in the middle of the container vertically */
+  left: 50%; /* Position it in the middle of the container horizontally */
+  transform: translate(-50%, -50%); /* Adjust to center the text exactly */
+  color: white; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  white-space: nowrap; /* Prevent text wrapping */
 }

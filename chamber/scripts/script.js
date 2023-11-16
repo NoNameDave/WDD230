@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('*'),
         document.querySelector('header'),
         document.querySelector('footer'),
-        document.querySelector('.card'),
-        document.querySelector('.card2')
+        document.querySelector('.main')
     ];
     
     darkModeToggle.addEventListener('click', function() {

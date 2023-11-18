@@ -1,31 +1,40 @@
 @media screen and (min-width: 768px) { 
-    nav ul {
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    nav li {
-      padding: 0 10px;
-    }
-  
-    main {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
-    .card {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-    }
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
   }
-  
-  @media (min-width: 768px) {
-    .hamburger {
-      display: none;
-    }
-  
-    #navigation {
-      display: block;
-    }
+
+  nav li {
+    padding: 0 10px;
   }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  #navigation {
+    display: block;
+  }
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+}
+
+.main-content {
+  grid-column: 2 / 3;
+}
+

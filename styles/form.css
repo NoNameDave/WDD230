@@ -3,4 +3,45 @@
     --font-size: ...;
     --background-color: #...;
   }
-  
+  /* This styles the form element itself */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* Centers the form on the page */
+  padding: 20px; /* Adds some space inside the form */
+  max-width: 500px; /* Adjust as needed */
+}
+
+/* Styles for each input and label */
+form label, form input, form output {
+  margin: 10px; /* Adds space around each item */
+  width: 100%; /* Makes each item take the full width of the form */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Optional: Styles for the submit button */
+form input[type="submit"] {
+  cursor: pointer; /* Changes cursor to indicate it's clickable */
+  padding: 10px 20px; /* Adjust as needed for button size */
+  background-color: #007bff; /* Example background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for specific input types if needed */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="range"] {
+  /* Additional specific styles for input types */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  form {
+      width: 90%; /* Adjust form width on smaller screens */
+  }
+}

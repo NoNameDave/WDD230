@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Form</title>
+  <link href="../styles/base.css" rel="stylesheet" type="text/css">
+  <link href="../styles/larger.css" rel="stylesheet" type="text/css">
+  <link href="../styles/form.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <form method="get" action="record.html">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+
+    <label for="confirm_password">Confirm Password:</label>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+
+    <label for="rating">Page Rating:</label>
+    <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="this.nextElementSibling.value = this.value">
+
+    <output>5</output>
+    <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Christiaan Wolmarans. All rights reserved.</p>
+    </footer>
+    <script src="../scripts/getDates.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/visitCounter.js"></script>
+    <script src="../scripts/form.js"></script>
+</body>
+</html>

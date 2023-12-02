@@ -1,0 +1,22 @@
+{
+    "members": [
+        {
+            "name": "Tech Innovators Inc.",
+            "address": "123 Tech Lane, Innovation City, 10101",
+            "phone_number": "+123 456 7890",
+            "website_url": "https://techinnovators.com",
+            "image_file": "../images/hero-image.webp",
+            "membership_level": "Gold",
+            "additional_info": "Leading in AI and ML Solutions"
+        },
+        {
+            "name": "Green Energy Co.",
+            "address": "456 Sustainability St., Eco Town, 20202",
+            "phone_number": "+321 654 0987",
+            "website_url": "https://sedo.com",
+            "image_file": "../images/temple1.webp",
+            "membership_level": "Silver",
+            "additional_info": "Pioneers in Renewable Energy"
+        }
+    ]
+}
